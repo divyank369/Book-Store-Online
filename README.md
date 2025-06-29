@@ -1,3 +1,4 @@
 # Book-Store-Online
 Starting with basic features of online book store ,later on add more features and enhance it
-## link for the output->onlinebookstore348.netlify.app
+## link for the output->
+onlinebookstore348.netlify.app
