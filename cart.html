@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - Online Bookstore</title>
+  <link rel="stylesheet" href="cart.css"> <!-- Updated CSS link to cart.css -->
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="/" class="logo">Online Bookstore</a>
+      <ul class="navbar-links">
+        <li><a href="/" class="nav-link">Home</a></li>
+        <li><a href="/books.html" class="nav-link">Books</a></li>
+        <li><a href="/categories.html" class="nav-link">Categories</a></li>
+        <li><a href="/cart.html" class="nav-link active">Cart</a></li> <!-- Cart active class here -->
+        <li><a href="/account.html" class="nav-link">Account</a></li>
+      </ul>
+      <div class="navbar-search">
+        <input type="text" placeholder="Search by title, author, or ISBN">
+        <button type="submit">Search</button>
+      </div>
+      <button class="mode-toggle" id="modeToggle">🌙</button>
+    </div>
+  </nav>
+
+  <!-- Cart Section -->
+  <header class="hero fade-in">
+    <div class="hero-content">
+      <h1>Your Cart</h1>
+      <p>Review the items you've added to your cart.</p>
+    </div>
+  </header>
+
+  <!-- Cart Items List -->
+  <section class="cart-items fade-in">
+    <div class="cart-item">
+      <img src="path-to-book-image.jpg" alt="Book 1">
+      <div class="cart-item-details">
+        <h3>Book Title 1</h3>
+        <p>Price: ₹499</p>
+        <div class="quantity">
+          <button>-</button>
+          <input type="number" value="1">
+          <button>+</button>
+        </div>
+      </div>
+    </div>
+    <div class="cart-item">
+      <img src="path-to-book-image.jpg" alt="Book 2">
+      <div class="cart-item-details">
+        <h3>Book Title 2</h3>
+        <p>Price: ₹350</p>
+        <div class="quantity">
+          <button>-</button>
+          <input type="number" value="1">
+          <button>+</button>
+        </div>
+      </div>
+    </div>
+    <!-- Add more cart items here -->
+    <div class="total">
+      <p>Total: ₹849</p>
+      <button class="checkout-button">Checkout</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Online Bookstore. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="/privacy-policy">Privacy Policy</a>
+      <a href="/terms-of-use">Terms of Use</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

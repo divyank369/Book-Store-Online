@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account - Online Bookstore</title>
+  <link rel="stylesheet" href="cart.css"> <!-- Updated CSS link to cart.css -->
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="/" class="logo">Online Bookstore</a>
+      <ul class="navbar-links">
+        <li><a href="/" class="nav-link">Home</a></li>
+        <li><a href="/books.html" class="nav-link">Books</a></li>
+        <li><a href="/categories.html" class="nav-link">Categories</a></li>
+        <li><a href="/cart.html" class="nav-link">Cart</a></li>
+        <li><a href="/account.html" class="nav-link active">Account</a></li>
+      </ul>
+      <div class="navbar-search">
+        <input type="text" placeholder="Search by title, author, or ISBN">
+        <button type="submit">Search</button>
+      </div>
+      <button class="mode-toggle" id="modeToggle">🌙</button>
+    </div>
+  </nav>
+
+  <!-- Account Section -->
+  <header class="hero fade-in">
+    <div class="hero-content">
+      <h1>Your Profile</h1>
+      <p>Manage your personal information and settings</p>
+    </div>
+  </header>
+
+  <!-- Account Information Form -->
+  <section class="account-info fade-in">
+    <div class="account-item">
+      <label for="name">Name:</label>
+      <input type="text" id="name" value="John Doe">
+    </div>
+    <div class="account-item">
+      <label for="email">Email:</label>
+      <input type="email" id="email" value="john@example.com">
+    </div>
+    <div class="account-item">
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" value="9876543210">
+    </div>
+    <div class="account-item">
+      <label for="address">Address:</label>
+      <input type="text" id="address" value="123 Main St, City, Country">
+    </div>
+    <div class="account-item">
+      <button class="save-button">Save Changes</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Online Bookstore. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="/privacy-policy">Privacy Policy</a>
+      <a href="/terms-of-use">Terms of Use</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

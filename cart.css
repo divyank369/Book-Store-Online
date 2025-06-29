@@ -1,0 +1,96 @@
+/* Navigation Bar */
+.navbar {
+  background-color: #1a1a1a; /* Dark background color */
+  padding: 20px 40px; /* Added padding for better spacing */
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto; /* Center the navbar content */
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ff8c00;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 30px; /* Increased gap for better spacing between links */
+}
+
+.navbar-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #ff8c00; /* Orange color on hover */
+  transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Active Link Styling */
+.navbar-links a.active {
+  color: #ff8c00; /* Active link color (orange) */
+  font-weight: bold; /* Make active link bold */
+}
+
+/* Search Bar */
+.navbar-search {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-search input {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 200px;
+  transition: width 0.3s ease, border-color 0.3s ease;
+}
+
+.navbar-search input:focus {
+  border-color: #ff8c00; /* Highlight border color */
+  width: 250px; /* Expand search bar on focus */
+}
+
+.navbar-search button {
+  padding: 10px 15px;
+  background-color: #ff8c00;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px; /* Space between the search input and button */
+}
+
+.navbar-search button:hover {
+  background-color: #e07b00; /* Darker orange on hover */
+}
+
+/* Mode Toggle Button */
+.mode-toggle {
+  font-size: 1.5rem;
+  background: none;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.mode-toggle:hover {
+  transform: rotate(360deg); /* Rotate effect on hover */
+}
